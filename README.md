@@ -1,24 +1,16 @@
-# myresume
+# 个人简历
 
-## Project setup
-```
-npm install
-```
+## 模板地址
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+点击查看效果 ☞ [<个人简历主页>](https://913563848.github.io/#/)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## 使用须知
 
-### Lints and fixes files
-```
-npm run lint
-```
+1. 切换分支为`admin`
+2. 拉取文件
+3. 运行命令 `npm install` or `yarn add`
+4. 打开浏览器地址 [http://localhost:8080/](http://localhost:8080/)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## **说明**:
+
+> **当前项目主分支为个人网页打包文件,damin 分支为开发文件,下载请注意区分**
