@@ -5,6 +5,10 @@
     </div>
     <div class="home-center">
       <Main />
+      <div class="copyright">
+        Copyright © 2021 All Rights Reserved of
+        <a href="https://913563848.github.io/" target="_blank">MengLong</a>
+      </div>
     </div>
     <div class="home-right"></div>
   </div>
@@ -25,17 +29,27 @@ export default class Home extends Vue {}
 <style lang="less" scoped>
 .home {
   width: 99.9%;
-  position: relative;
+  padding: 30px 10px;
   .home-left {
     width: 290px;
     height: 520px;
     position: fixed;
-    left: 10px;
   }
   .home-center {
+    background-color: #fff;
+    color: #303133;
     width: 900px;
-    margin: 30px auto;
-    border: 1px solid red;
+    margin: 0 auto;
+    box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+    .copyright {
+      background-color: #e1ffff;
+      padding-top: 20px;
+      text-align: center;
+      > a {
+        color: #303133;
+        text-decoration: none;
+      }
+    }
   }
 }
 </style>

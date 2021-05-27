@@ -3,7 +3,7 @@
     <div class="avatar">
       <el-avatar
         :size="200"
-        fit="cover"
+        fit="scale-down"
         :src="src"
         @error="errorHandler"
         class="avatarImg"
