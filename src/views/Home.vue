@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home" id="basic">
     <div class="home-left">
       <Message />
     </div>
@@ -9,9 +9,9 @@
         Copyright © 2021 All Rights Reserved of
         <a href="https://913563848.github.io/" target="_blank">MengLong</a>
       </div>
-      <div class="sidebar">
-        <Sidebar />
-      </div>
+    </div>
+    <div class="sidebar">
+      <Sidebar />
     </div>
   </div>
 </template>
@@ -55,13 +55,14 @@ export default class Home extends Vue {}
         text-decoration: none;
       }
     }
-    .sidebar {
-      width: 54px;
-      background-color: rgba(0, 0, 0, 0);
-      position: absolute;
-      top: 0;
-      right: -30px;
-    }
+  }
+  .sidebar {
+    width: 54px;
+    height: 520px;
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    right: 25px;
+    top: 30px;
   }
 }
 </style>

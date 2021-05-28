@@ -1,6 +1,6 @@
 <template>
   <el-card class="main">
-    <div class="main-item" id="basic">
+    <div class="main-item">
       <h2>&emsp;基本信息</h2>
       <Basic />
     </div>

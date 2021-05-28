@@ -9,12 +9,21 @@
     >
       <img :src="require('../assets/src.png')" />
     </el-avatar>
-
-    <i class="el-icon-user" title="基本信息" @click="onRoll('education')"></i>
-    <i class="el-icon-brush" title="职业技能"></i>
-    <i class="el-icon-school" title="教育经历"></i>
-    <i class="el-icon-suitcase" title="工作经历"></i>
-    <i class="el-icon-trophy" title="个人作品"></i>
+    <a href="#basic">
+      <i class="el-icon-user" title="基本信息"></i>
+    </a>
+    <a href="#skill">
+      <i class="el-icon-brush" title="职业技能"></i>
+    </a>
+    <a href="#education">
+      <i class="el-icon-school" title="教育经历"></i>
+    </a>
+    <a href="#work">
+      <i class="el-icon-suitcase" title="工作经历"></i>
+    </a>
+    <a href="#production">
+      <i class="el-icon-trophy" title="个人作品"></i>
+    </a>
   </el-card>
 </template>
 
@@ -27,8 +36,6 @@ export default class Sidebar extends Vue {
   @State("avatar") src!: string;
   errorHandler() {
     return true;
-  }
-  onRoll(type: string) {
   }
 }
 </script>
@@ -45,13 +52,12 @@ export default class Sidebar extends Vue {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    > i {
+    > a {
       display: block;
       width: 100%;
       text-align: center;
       font-size: 30px;
       color: #999;
-      cursor: pointer;
       &:hover {
         color: #000;
       }
