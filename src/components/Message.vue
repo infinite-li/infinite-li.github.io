@@ -27,9 +27,14 @@
     </div>
 
     <div class="print">
-      <el-button round @click="onPrint"
-        ><i class="el-icon-printer"></i> 打印此简历</el-button
-      >
+      <el-button round>
+        <a
+          target="_blank"
+          href="http://wpa.qq.com/msgrd?v=3&amp;uin=913563848&amp;site=qq&amp;menu=yes"
+        >
+          <i class="el-icon-s-promotion"></i> 点击进行QQ交谈
+        </a>
+      </el-button>
     </div>
   </el-card>
 </template>
@@ -49,9 +54,6 @@ export default class Message extends Vue {
 
   errorHandler() {
     return true;
-  }
-  onPrint() {
-    window.print();
   }
 }
 </script>
@@ -88,6 +90,10 @@ export default class Message extends Vue {
   }
   .print {
     margin-top: 30px;
+    a {
+      text-decoration: none;
+      color: #606266;
+    }
   }
 }
 </style>

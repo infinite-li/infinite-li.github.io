@@ -28,6 +28,18 @@
     background-color: #fff !important;
   }
 }
+@media screen and (max-width: 700px) {
+  .production {
+    justify-content: center;
+    > div {
+      width: 100% !important;
+      margin-top: 10px;
+    }
+  }
+  .skill-item {
+    width: 100% !important;
+  }
+}
 
 * {
   margin: 0;

@@ -22,7 +22,7 @@ import { Component, Vue } from "vue-property-decorator";
 import { State } from "vuex-class";
 
 @Component
-export default class Education extends Vue {
+export default class School extends Vue {
   @State("schoolBadge") badge!: string;
   @State("school") school!: object;
 

@@ -69,6 +69,7 @@ export default class Production extends Vue {
 .production {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   > div {
     overflow: hidden;

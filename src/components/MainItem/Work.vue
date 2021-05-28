@@ -2,7 +2,7 @@
   <div class="work">
     <el-timeline>
       <el-timeline-item
-        timestamp="2018/4 - 2018/6"
+        :timestamp="item.time"
         v-for="(item, i) in works"
         :key="i"
         placement="top"
@@ -13,10 +13,10 @@
           <p>{{ item.site }} | {{ item.company }}</p>
           <el-collapse>
             <el-collapse-item>
-              <template slot="title" style="">{{
-                item.content | contentFilter
-              }}</template>
-              <p class="content" v-html="item.content.substring(count)"></p>
+              <template slot="title">
+                <p class="itemTitle">{{ item.title }}</p>
+              </template>
+              <p class="content" v-html="item.content"></p>
             </el-collapse-item>
           </el-collapse>
         </el-card>
@@ -31,35 +31,9 @@ import { State } from "vuex-class";
 
 let count: number;
 
-@Component({
-  filters: {
-    contentFilter: (val: string) => {
-      let newVal = val.substring(0, 60);
-      if (newVal.indexOf("<br/>") != -1 || newVal.indexOf("<br />") != -1) {
-        // 找到
-        count =
-          newVal.indexOf("<br/>") === -1
-            ? newVal.indexOf("<br />") + 6
-            : newVal.indexOf("<br/>") + 5;
-
-        return val.substring(
-          0,
-          newVal.indexOf("<br/>") === -1
-            ? newVal.indexOf("<br />")
-            : newVal.indexOf("<br/>")
-        );
-      }
-      // 未找到
-      return val.substring(0, 60);
-    },
-  },
-})
+@Component
 export default class Work extends Vue {
   @State("works") works!: object[];
-
-  public get count(): number {
-    return count;
-  }
 }
 </script>
 
@@ -67,6 +41,12 @@ export default class Work extends Vue {
 .work {
   padding: 0 50px;
   .work-card {
+    .itemTitle {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -o-text-overflow: ellipsis;
+      white-space: nowrap;
+    }
     p {
       line-height: 40px;
     }

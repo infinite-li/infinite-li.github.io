@@ -12,7 +12,7 @@
     <el-divider></el-divider>
     <div class="main-item" id="education">
       <h2>&emsp;教育经历</h2>
-      <Education />
+      <School />
     </div>
     <el-divider></el-divider>
     <div class="main-item" id="work">
@@ -30,7 +30,7 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import Basic from "./MainItem/Basic.vue";
-import Education from "./MainItem/Education.vue";
+import School from "./MainItem/School.vue";
 import Skill from "./MainItem/Skill.vue";
 import Work from "./MainItem/Work.vue";
 import Production from "./MainItem/Production.vue";
@@ -38,7 +38,7 @@ import Production from "./MainItem/Production.vue";
 @Component({
   components: {
     Basic,
-    Education,
+    School,
     Skill,
     Work,
     Production,
