@@ -18,6 +18,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import { State } from "vuex-class";
 import Message from "@/components/Message.vue";
 import Main from "@/components/Main.vue";
 import Sidebar from "@/components/Sidebar.vue";
@@ -28,7 +29,12 @@ import Sidebar from "@/components/Sidebar.vue";
     Sidebar,
   },
 })
-export default class Home extends Vue {}
+export default class Home extends Vue {
+  @State("name") name!: string;
+  created() {
+    document.title = this.name ? this.name : "Mr Li" + " 的简历";
+  }
+}
 </script>
 <style lang="less" scoped>
 .home {
