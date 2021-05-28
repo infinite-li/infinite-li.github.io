@@ -50,9 +50,6 @@ export default class Work extends Vue {
     p {
       line-height: 40px;
     }
-    .content {
-      padding-right: 60px;
-    }
   }
 }
 </style>
