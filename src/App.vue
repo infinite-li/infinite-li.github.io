@@ -4,6 +4,26 @@
   </div>
 </template>
 <style lang="less">
+@media screen and (max-width: 1530px) {
+  .home-center {
+    margin-left: 295px !important;
+  }
+  .home-left {
+    position: fixed !important;
+  }
+}
+@media screen and (max-width: 1190px) {
+  .home-center,
+  .home-left {
+    width: 100% !important;
+    position: static !important;
+    margin: 0 !important;
+  }
+  .el-card {
+    background-color: #fff !important;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -21,5 +41,11 @@ body,
 }
 .el-card {
   background-color: rgba(0, 0, 0, 0) !important;
+}
+.el-collapse-item__header {
+  border-bottom: none !important;
+  > i {
+    display: none;
+  }
 }
 </style>

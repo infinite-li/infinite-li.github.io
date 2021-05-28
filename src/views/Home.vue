@@ -9,8 +9,10 @@
         Copyright © 2021 All Rights Reserved of
         <a href="https://913563848.github.io/" target="_blank">MengLong</a>
       </div>
+      <div class="sidebar">
+        <Sidebar />
+      </div>
     </div>
-    <div class="home-right"></div>
   </div>
 </template>
 
@@ -18,10 +20,12 @@
 import { Component, Vue } from "vue-property-decorator";
 import Message from "@/components/Message.vue";
 import Main from "@/components/Main.vue";
+import Sidebar from "@/components/Sidebar.vue";
 @Component({
   components: {
     Message,
     Main,
+    Sidebar,
   },
 })
 export default class Home extends Vue {}
@@ -41,6 +45,7 @@ export default class Home extends Vue {}
     width: 900px;
     margin: 0 auto;
     box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+    position: relative;
     .copyright {
       background-color: #e1ffff;
       padding-top: 20px;
@@ -49,6 +54,13 @@ export default class Home extends Vue {}
         color: #303133;
         text-decoration: none;
       }
+    }
+    .sidebar {
+      width: 54px;
+      background-color: rgba(0, 0, 0, 0);
+      position: absolute;
+      top: 0;
+      right: -30px;
     }
   }
 }

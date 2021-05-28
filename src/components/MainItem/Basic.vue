@@ -1,0 +1,62 @@
+<template>
+  <div class="basic">
+    <dl>
+      <dt>性别：</dt>
+      <dd>{{ sex ? sex : "男" }}</dd>
+      <dt>出生日期：</dt>
+      <dd>{{ birthday ? birthday : "09 Jan 1991" }}</dd>
+      <dt>手机：</dt>
+      <dd>{{ mobileNo ? mobileNo : "xxxx" }}</dd>
+      <dt>微信：</dt>
+      <dd>{{ wechatNo ? wechatNo : "xxxx" }}</dd>
+      <dt>E-MAIL：</dt>
+      <dd>
+        <a href="https://mail.qq.com/" target="_blank">{{
+          mailbox ? mailbox : "xxxx@xx.com"
+        }}</a>
+      </dd>
+    </dl>
+  </div>
+</template>
+
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator";
+import { State } from "vuex-class";
+
+@Component
+export default class Basic extends Vue {
+  @State("sex") sex!: string;
+  @State("birthday") birthday!: string;
+  @State("mobileNo") mobileNo!: string;
+  @State("wechatNo") wechatNo!: string;
+  @State("mailbox") mailbox!: string;
+}
+</script>
+
+<style lang="less" scope>
+.basic {
+  dl {
+    margin-bottom: 50px;
+  }
+  dl dt {
+    font-size: 16px;
+    float: left;
+    font-weight: bold;
+    margin: 10px 0;
+    width: 150px;
+  }
+  dl dd {
+    font-size: 16px;
+    margin: 3px 0;
+    padding: 10px 0;
+    a {
+      color: #303133;
+      text-decoration: underline;
+      cursor: pointer;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+</style>
