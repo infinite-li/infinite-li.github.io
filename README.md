@@ -2,14 +2,14 @@
 
 ## 模板地址
 
-点击查看效果 ☞ [<个人简历主页>](https://913563848.github.io/#/)
+点击查看效果 ☞ [<个人简历主页>](https://913563848.github.io/#/){:target="_blank"}
 
 ## 使用须知
 
 1. 切换分支为`admin`
 2. 拉取文件
 3. 运行命令 `npm install` or `yarn add`
-4. 打开浏览器地址 [http://localhost:8080/](http://localhost:8080/)
+4. 打开浏览器地址 [http://localhost:8080/](http://localhost:8080/){:target="_blank"}
 
 ## 说明:
 
