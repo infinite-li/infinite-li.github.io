@@ -44,7 +44,6 @@ export default class Home extends Vue {}
     color: #303133;
     width: 900px;
     margin: 0 auto;
-    box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
 
     .copyright {
       background-color: #e1ffff;
