@@ -1,5 +1,5 @@
 <template>
-  <div class="home" id="basic">
+  <div class="home">
     <div class="home-left">
       <Message />
     </div>
@@ -45,7 +45,7 @@ export default class Home extends Vue {}
     width: 900px;
     margin: 0 auto;
     box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
-    position: relative;
+
     .copyright {
       background-color: #e1ffff;
       padding-top: 20px;
@@ -61,8 +61,8 @@ export default class Home extends Vue {}
     height: 520px;
     background-color: rgba(0, 0, 0, 0);
     position: fixed;
-    right: 25px;
     top: 30px;
+    right: 25px;
   }
 }
 </style>

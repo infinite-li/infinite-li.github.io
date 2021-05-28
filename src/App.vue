@@ -12,6 +12,11 @@
     position: fixed !important;
   }
 }
+@media screen and (max-width: 1290px) {
+  .sidebar {
+    display: none;
+  }
+}
 @media screen and (max-width: 1190px) {
   .home-center,
   .home-left {

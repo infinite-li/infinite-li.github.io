@@ -44,6 +44,8 @@ export default class Sidebar extends Vue {
 .sidebar {
   width: 100%;
   height: 520px;
+  position: fixed;
+  top: 30px;
   > div {
     height: 100%;
     padding: 0;
