@@ -7,7 +7,7 @@
       <Main />
       <div class="copyright">
         Copyright © 2021 All Rights Reserved of
-        <a href="https://913563848.github.io/" target="_blank">MengLong</a>
+        <a href="https://913563848.github.io/" target="_blank">Github</a>
       </div>
     </div>
     <div class="sidebar">
@@ -19,9 +19,9 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import { State } from "vuex-class";
-import Message from "@/components/Message.vue";
-import Main from "@/components/Main.vue";
-import Sidebar from "@/components/Sidebar.vue";
+import Message from "../components/Message.vue";
+import Main from "../components/Main.vue";
+import Sidebar from "../components/Sidebar.vue";
 @Component({
   components: {
     Message,
