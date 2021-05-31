@@ -14,9 +14,9 @@
           <el-collapse>
             <el-collapse-item>
               <template slot="title">
-                <p class="itemTitle">{{ item.title }}</p>
+                <p class="work-card-title">{{ item.title }}</p>
               </template>
-              <p class="content" v-html="item.content"></p>
+              <p class="work-card-content" v-html="item.content"></p>
             </el-collapse-item>
           </el-collapse>
         </el-card>
@@ -29,8 +29,6 @@
 import { Component, Vue } from "vue-property-decorator";
 import { State } from "vuex-class";
 
-let count: number;
-
 @Component
 export default class Work extends Vue {
   @State("works") works!: object[];
@@ -41,7 +39,7 @@ export default class Work extends Vue {
 .work {
   padding: 0 50px;
   .work-card {
-    .itemTitle {
+    .work-card-title {
       overflow: hidden;
       text-overflow: ellipsis;
       -o-text-overflow: ellipsis;

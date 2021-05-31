@@ -36,8 +36,22 @@
       margin-top: 10px;
     }
   }
+  .work {
+    padding: 0 !important;
+  }
   .skill-item {
     width: 100% !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .work {
+    padding: 0 !important;
+    .work-card > div {
+      padding: 5 !important;
+      .work-card-content {
+        font-size: 10px !important;
+      }
+    }
   }
 }
 
