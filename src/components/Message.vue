@@ -22,7 +22,12 @@
 
     <div class="icons">
       <i class="el-icon-mobile-phone" :title="'手机：' + mobileNo"></i>
-      <i class="el-icon-message" :title="'邮箱：' + mailbox"></i>
+      <a
+        href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=4NnR09XW09jU2KCRkc6Dj40"
+        target="_blank"
+        ><i class="el-icon-message" :title="'邮箱：' + mailbox"></i
+      ></a>
+
       <i class="el-icon-chat-dot-square" :title="'微信：' + wechatNo"></i>
     </div>
 
@@ -84,6 +89,10 @@ export default class Message extends Vue {
   .icons {
     font-size: 28px;
     line-height: 70px;
+    a {
+      color: #303133;
+      text-decoration: none;
+    }
     i {
       margin: 0 10px;
     }

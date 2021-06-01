@@ -49,7 +49,6 @@ export default class Sidebar extends Vue {
   > div {
     height: 100%;
     padding: 0;
-    background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

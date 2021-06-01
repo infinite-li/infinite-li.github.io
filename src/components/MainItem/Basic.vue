@@ -11,9 +11,12 @@
       <dd>{{ wechatNo ? wechatNo : "xxxx" }}</dd>
       <dt>E-MAIL：</dt>
       <dd>
-        <a href="https://mail.qq.com/" target="_blank">{{
-          mailbox ? mailbox : "xxxx@xx.com"
-        }}</a>
+        <a
+          href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=4NnR09XW09jU2KCRkc6Dj40"
+          target="_blank"
+          title="给我写信"
+          >{{ mailbox ? mailbox : "xxxx@xx.com" }}</a
+        >
       </dd>
     </dl>
   </div>

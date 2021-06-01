@@ -64,7 +64,7 @@ body,
 #app {
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  background-image: linear-gradient(-225deg, #fffeff 0%, #d7fffe 100%);
   overflow-x: hidden;
   overflow-y: auto;
   font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
