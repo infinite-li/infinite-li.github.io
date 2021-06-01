@@ -64,7 +64,7 @@ export default class Home extends Vue {
   .sidebar {
     width: 54px;
     height: 520px;
-    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(-225deg, #fffeff 0%, #d7fffe 100%);
     position: fixed;
     top: 30px;
     right: 25px;
