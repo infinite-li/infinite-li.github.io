@@ -79,4 +79,7 @@ body,
     display: none;
   }
 }
+body {
+  cursor: url(./assets/blue.png), auto;
+}
 </style>
