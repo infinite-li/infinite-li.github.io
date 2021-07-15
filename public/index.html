@@ -16,13 +16,16 @@
       >
     </noscript>
     <div id="app"></div>
-    <script
-      color="163,220,247"
-      pointColor="0,0,0"
-      count="100"
-      src="/js/canvas-nest.js"
-      type="text/javascript"
-    ></script>
+    <script>
+      if (screen.width > 800) {
+        var script = document.createElement('script');
+        script.setAttribute('color', '163,220,247');
+        script.setAttribute('pointColor', '0,0,0');
+        script.setAttribute('count', '100');
+        script.src = '/js/canvas-nest.js';
+        document.body.appendChild(script);
+      }
+    </script>
     <script src="/js/cross-stitchWork.js"></script>
   </body>
 </html>
